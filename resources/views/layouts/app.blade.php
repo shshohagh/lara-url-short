@@ -21,13 +21,9 @@
 <body>
     <div id="app">
         <navbar-component></navbar-component>
-
-        <main class="py-4">
             @yield('content')
-        </main>
-        <footer-component />
+    
     </div>   
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>

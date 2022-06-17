@@ -25,7 +25,7 @@
                 <li></li>
             </ul>
         </div>
-
+<footer-component />
    </div>
 </template>
 

@@ -1,34 +1,24 @@
 <template>
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="/">
-                    Lara URL Short
+<section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white text-white font-weight-bold">
+          
+
+                <a class="navbar-brand text-uppercase" href="/" style="font-size:30px">
+                    URLShort
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
 
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
-                       
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/login">Login</a>
-                                </li>
-                        
-
-                        
-                                <li class="nav-item">
+                   <div class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/login">Login</a>
+                            </li>
+                            <li class="nav-item">
                                     <a class="nav-link" href="/register">Register</a>
-                                </li>
-                         
-                    
+                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     User Name
@@ -40,11 +30,13 @@
                                     </a>
                                 </div>
                             </li>
-                    
-                    </ul>
+                   </div>
+
+
                 </div>
-            </div>
+           
         </nav>
+</section>
 </template>
 
 <script>

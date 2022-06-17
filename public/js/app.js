@@ -5395,14 +5395,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {}
 });
@@ -28425,16 +28417,23 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "nav",
-      {
-        staticClass: "navbar navbar-expand-md navbar-light bg-white shadow-sm",
-      },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
-            _vm._v("\n                    Lara URL Short\n                "),
-          ]),
+    return _c("section", { attrs: { id: "nav-bar" } }, [
+      _c(
+        "nav",
+        {
+          staticClass:
+            "navbar navbar-expand-lg navbar-light bg-white text-white font-weight-bold",
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "navbar-brand text-uppercase",
+              staticStyle: { "font-size": "30px" },
+              attrs: { href: "/" },
+            },
+            [_vm._v("\n                    URLShort\n                ")]
+          ),
           _vm._v(" "),
           _c(
             "button",
@@ -28459,9 +28458,7 @@ var staticRenderFns = [
               attrs: { id: "navbarSupportedContent" },
             },
             [
-              _c("ul", { staticClass: "navbar-nav me-auto" }),
-              _vm._v(" "),
-              _c("ul", { staticClass: "navbar-nav ms-auto" }, [
+              _c("div", { staticClass: "navbar-nav ml-auto" }, [
                 _c("li", { staticClass: "nav-item" }, [
                   _c(
                     "a",
@@ -28525,9 +28522,9 @@ var staticRenderFns = [
               ]),
             ]
           ),
-        ]),
-      ]
-    )
+        ]
+      ),
+    ])
   },
 ]
 render._withStripped = true
@@ -28552,50 +28549,69 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    { attrs: { id: "link" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _c("footer-component"),
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "link" } }, [
-      _c("div", { staticClass: "welcome", attrs: { id: "banner" } }, [
-        _c("div", { staticClass: "text-center" }, [
-          _c("h1", [_vm._v("Simplify your links free")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "lead" }, [
-            _vm._v("Create and share trusted, best powerful short links"),
-          ]),
+    return _c("div", { staticClass: "welcome", attrs: { id: "banner" } }, [
+      _c("div", { staticClass: "text-center" }, [
+        _c("h1", [_vm._v("Simplify your links free")]),
+        _vm._v(" "),
+        _c("p", { staticClass: "lead" }, [
+          _vm._v("Create and share trusted, best powerful short links"),
         ]),
       ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "square" }, [
-        _c("ul", [
-          _c("li"),
-          _vm._v(" "),
-          _c("li"),
-          _vm._v(" "),
-          _c("li"),
-          _vm._v(" "),
-          _c("li"),
-          _vm._v(" "),
-          _c("li"),
-        ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "square" }, [
+      _c("ul", [
+        _c("li"),
+        _vm._v(" "),
+        _c("li"),
+        _vm._v(" "),
+        _c("li"),
+        _vm._v(" "),
+        _c("li"),
+        _vm._v(" "),
+        _c("li"),
       ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "circle" }, [
-        _c("ul", [
-          _c("li"),
-          _vm._v(" "),
-          _c("li"),
-          _vm._v(" "),
-          _c("li"),
-          _vm._v(" "),
-          _c("li"),
-          _vm._v(" "),
-          _c("li"),
-        ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "circle" }, [
+      _c("ul", [
+        _c("li"),
+        _vm._v(" "),
+        _c("li"),
+        _vm._v(" "),
+        _c("li"),
+        _vm._v(" "),
+        _c("li"),
+        _vm._v(" "),
+        _c("li"),
       ]),
     ])
   },

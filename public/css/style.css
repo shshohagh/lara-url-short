@@ -1,3 +1,25 @@
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    background-image: linear-gradient(to right, #ff5722, #ffc107);
+    padding: 0 15px !important;
+    color: #fff !important;
+}
+.navbar-brand{
+    color: #fff !important;
+}
+.nav-link{
+    color: #fff !important;
+}
+.nav-link:hover{
+    color: #000 !important;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
 #banner{
     background-image: linear-gradient(#ff5722, #ffc107);
     position: relative;
