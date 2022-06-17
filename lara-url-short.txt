@@ -1,0 +1,25 @@
+https://www.youtube.com/playlist?list=PLPoLMl4y9d7CCVZjT_hLwg8HASnPb2p9C
+https://laravel.com/docs/9.x/installation
+https://github.com/laravel/ui
+
+composer create-project laravel/laravel lara-url-short
+composer require laravel/ui
+php artisan ui vue --auth
+npm i
+npm run dev
+npm install vue-loader@^15.9.8 --save-dev
+npm run dev ( For Compile )
+npm run watch ( For Auto Compile )
+npm run prod (For Production)
+https://www.youtube.com/watch?v=EQkwPpLfmLc&list=PLPoLMl4y9d7CCVZjT_hLwg8HASnPb2p9C&index=7
+
+Error Fixed Start===========================
+add these lines to webpack.mix.js
+mix.webpackConfig({
+    stats: {
+        children: true,
+    },
+});
+npm install autoprefixer@10.4.5 --save-exact
+Error Fixed End========================
+https://www.youtube.com/watch?v=-PDrZEYUwpA&list=PLPoLMl4y9d7CCVZjT_hLwg8HASnPb2p9C&index=9
