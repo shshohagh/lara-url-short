@@ -22,4 +22,4 @@ mix.webpackConfig({
 });
 npm install autoprefixer@10.4.5 --save-exact
 Error Fixed End========================
-https://www.youtube.com/watch?v=-PDrZEYUwpA&list=PLPoLMl4y9d7CCVZjT_hLwg8HASnPb2p9C&index=9
+https://www.youtube.com/watch?v=Q2nQNZZdpTY&list=PLPoLMl4y9d7CCVZjT_hLwg8HASnPb2p9C&index=10

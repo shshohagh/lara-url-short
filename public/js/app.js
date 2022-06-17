@@ -28335,7 +28335,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("div", { staticClass: "row footer margin-right-0" }, [
         _c("div", { staticClass: "col-md-4" }, [
-          _c("h4", [_vm._v("Lara URL Shortner")]),
+          _c("h4", [_vm._v("URL Short")]),
           _vm._v(" "),
           _c("p", [_vm._v("app about us from setting")]),
         ]),

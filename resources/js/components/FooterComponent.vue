@@ -2,7 +2,7 @@
     <div>
         <div class="row footer margin-right-0">
             <div class="col-md-4"> 
-                <h4>Lara URL Shortner</h4> 
+                <h4>URL Short</h4> 
                 <p>app about us from setting</p>
                 </div>
             <div class="col-md-4"> 
