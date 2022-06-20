@@ -4,6 +4,7 @@
             <div class="text-center">
                 <h1>Simplify your links free</h1>
                 <p class="lead">Create and share trusted, best powerful short links</p>
+                <urlshort-component></urlshort-component>
             </div>
         </div>
 
