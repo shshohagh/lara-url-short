@@ -28,7 +28,7 @@
                             <button class="btn btn-primary btn-block" @click.prevent="submitRegister">Signup</button>
                         </div>
                         <div class="form-row">
-                            <div class="form-group">Already have an account? <a href="">Login</a></div>
+                            <div class="form-group">Already have an account? <a href="/login">Login</a></div>
                         </div>
 
 
@@ -65,7 +65,8 @@
                         password_confirmation: this.password_confirmation
                     })
                     .then((res) => {
-                        console.log(res);
+                        //console.log(res);
+                        location.href= '/home'
                     })
                     .catch((error) => {
                         console.log(error);

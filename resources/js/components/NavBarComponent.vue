@@ -19,13 +19,13 @@
                             <li class="nav-item">
                                     <a class="nav-link" href="/register">Register</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li v-if="user !== 'null'" class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    User Name
+                                    {{ user.name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/logout">
+                                    <a class="dropdown-item" href="#" @click.prevent="logout">
                                         Logout
                                     </a>
                                 </div>
@@ -41,8 +41,14 @@
 
 <script>
     export default {
+        props:['user'],
         mounted() {
-           
-        }
+           console.log(this.user)
+        },
+        methods:{
+            logout(){
+                axios.post('/logout', {}).then((res) =>{ location.href= '/'})
+            }
+        }// methods
     }
 </script>

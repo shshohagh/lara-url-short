@@ -20,7 +20,8 @@
 </head>
 <body>
     <div id="app">
-        <navbar-component></navbar-component>
+        <navbar-component @guest user="null" @else :user="{{ Auth::user() }}" @endguest ></navbar-component>
+
             @yield('content')
     
     </div>   

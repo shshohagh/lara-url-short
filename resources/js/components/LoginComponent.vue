@@ -10,11 +10,11 @@
                     <form>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                            <input type="email" id="email" v-model="email" class="form-control" placeholder="Enter your email">
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                            <input type="password" id="password" v-model="password" class="form-control" placeholder="Enter your password">
                         </div>
                         <div class="form-group flexbox py-3 from-style">
                             <div class="custom-control custom checkbox pl-0">
@@ -22,10 +22,10 @@
                             </div>                
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary btn-block">Login</button>
+                            <button class="btn btn-primary btn-block" @click.prevent="userLogin">Login</button>
                         </div>
                         <div class="form-row">
-                            <div class="form-group">Don't have a account? <a href="">Create Account</a></div>
+                            <div class="form-group">Don't have a account? <a href="/register">Create Account</a></div>
                         </div>
 
 
@@ -38,8 +38,31 @@
 </template>
 
 <script>
+import { assertOptionalIndexedAccessType } from '@babel/types'
+
     export default {
-            name: "LoginComponent"
+            name: "LoginComponent",
+            data(){
+                return{
+                    email: '',
+                    password: '',
+                }
+            },
+            methods:{
+                userLogin(){
+                    axios.post('/login', {
+                        email: this.email,
+                        password: this.password
+                    })
+                    .then((res) =>{
+                        //alert(res)
+                        location.href= '/home'
+                    })
+                    .catch((err) =>{
+                        //alert(err)
+                    })
+                } // userLogin
+            } // methods
     }
 </script>
 
