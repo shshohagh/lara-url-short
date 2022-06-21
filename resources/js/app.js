@@ -7,18 +7,6 @@
 require('./bootstrap');
 
 window.Vue = require('vue').default;
-import { ValidationObserver, ValidationProvider, extend} from 'vee-validate';
-import { rquired, email} from 'vee-validate/dist/rules';
-import Vue from 'vue';
-
-extend('email', email);
-extend('required',{
-    ...required,
-    message: 'This field is required'
-});
-
-Vue.component('ValidationObserver',ValidationObserver);
-Vue.component('ValidationProvider',ValidationProvider);
 
 /**
  * The following block of code may be used to automatically register your
