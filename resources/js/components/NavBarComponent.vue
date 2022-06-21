@@ -43,11 +43,11 @@
     export default {
         props:['user'],
         mounted() {
-           console.log(this.user)
+           console.dir(this.user)
         },
         methods:{
             logout(){
-                axios.post('/logout', {}).then((res) =>{ location.href= '/'})
+                axios.post('/logout', {}).then((res) =>{ location.href= '/'}).catch((err) =>{})
             }
         }// methods
     }

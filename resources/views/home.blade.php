@@ -14,7 +14,14 @@
                         </div>
                     @endif
 
-                    Hello ! <b>{{ Auth::user()->name }}</b> {{ __('You are logged in!') }}
+                    Hello ! <b>{{ Auth::user()->name }}</b> {{ __('You are logged in!') }}<br>
+                    ID: {{ Auth::user()->id }} <br>
+                    Avatar: {{ Auth::user()->avatar }} <br>
+                    Email: {{ Auth::user()->email }} <br>
+                    Email verified at: {{ Auth::user()->email_verified_at }} <br>
+                    Created at: {{ Auth::user()->created_at }}<br>
+                    Type: {{ Auth::user()->type }}<br>
+                    Updated at: {{ Auth::user()->updated_at }}<br>
                 </div>
             </div>
         </div>

@@ -41,3 +41,6 @@ php artisan route:list
 
 https://www.youtube.com/watch?v=Q2nQNZZdpTY&list=PLPoLMl4y9d7CCVZjT_hLwg8HASnPb2p9C&index=15
 13
+php artisan optimize:clear
+
+npm i vee-validate --save

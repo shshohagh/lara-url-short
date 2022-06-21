@@ -7,10 +7,15 @@
                     <div class="form-group col-12">
                         <h5>Sign into your account</h5>
                     </div>
-                    <form>
+
+                <ValidationObserver v-slot="{ handleSubmit }">
+                    <form @click.prevent="handleSubmit(userLogin)">
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" v-model="email" class="form-control" placeholder="Enter your email">
+                            <ValidationProvider name="email" rules="required|email" v-slot="{errors}">
+                                <input type="email" id="email" v-model="email" class="form-control" placeholder="Enter your email">
+                                <span class="invalid-feedback d-block">{{ errors[0] }}</span>
+                            </ValidationProvider>
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
@@ -22,14 +27,14 @@
                             </div>                
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary btn-block" @click.prevent="userLogin">Login</button>
+                            <button class="btn btn-primary btn-block" type="submit">Login</button>
                         </div>
                         <div class="form-row">
                             <div class="form-group">Don't have a account? <a href="/register">Create Account</a></div>
                         </div>
-
-
                     </form>
+                </ValidationObserver>
+
                 </div>
             </div>
         </div>
