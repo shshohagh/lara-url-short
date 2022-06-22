@@ -22684,7 +22684,9 @@ __webpack_require__.r(__webpack_exports__);
       }).then(function (res) {
         //alert(res)
         location.href = '/home';
-      })["catch"](function (err) {//alert(err)
+      })["catch"](function (err) {
+        //alert(err)
+        console.log(err.response.data.errors.email[0]);
       });
     } // userLogin
 

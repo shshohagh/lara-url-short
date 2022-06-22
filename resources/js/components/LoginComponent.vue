@@ -60,6 +60,7 @@ import { assertOptionalIndexedAccessType } from '@babel/types'
                     })
                     .catch((err) =>{
                         //alert(err)
+                        console.log(err.response.data.errors.email[0])
                     })
                 } // userLogin
             } // methods
