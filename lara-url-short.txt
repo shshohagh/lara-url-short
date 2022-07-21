@@ -43,7 +43,9 @@ php artisan optimize:clear
 # npm i vee-validate --save
 Validation For Login/Signup page                   
 16
-
+---------------------------------------------------------------------
 After Clone:
 cp .env.example .env
 php artisan key:generate
+npm i
+Run 'npm install -g npm' to update

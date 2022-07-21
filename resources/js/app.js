@@ -27,6 +27,10 @@ Vue.component('welcome-component', require('./components/WelcomeComponent.vue').
 Vue.component('urlshort-component', require('./components/URLShortComponent.vue').default);
 Vue.component('login-component', require('./components/LoginComponent.vue').default);
 Vue.component('register-component', require('./components/RegisterComponent.vue').default);
+//Dashboard
+Vue.component('dashboard-component', require('./components/dashboard/DashboardComponent.vue').default);
+Vue.component('header-component', require('./components/dashboard/HeaderComponent.vue').default);
+Vue.component('sidebar-component', require('./components/dashboard/SidebarComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

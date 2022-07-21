@@ -66,7 +66,7 @@
                     })
                     .then((res) => {
                         //console.log(res);
-                        location.href= '/home'
+                        location.href= '/dashboard'
                     })
                     .catch((error) => {
                         console.log(error);

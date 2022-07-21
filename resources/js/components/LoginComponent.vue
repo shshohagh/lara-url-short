@@ -56,7 +56,7 @@ import { assertOptionalIndexedAccessType } from '@babel/types'
                     })
                     .then((res) =>{
                         //alert(res)
-                        location.href= '/home'
+                        location.href= '/dashboard'
                     })
                     .catch((err) =>{
                         //alert(err)
