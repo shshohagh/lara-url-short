@@ -12,14 +12,25 @@
             <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
                 <li class="nav item dropdown">
                     <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdwon" aria-haspopup="true" aria-expanded="false">
-                        User Name <span class="caret"></span>
+                        <img height="16" src="/img/default.jpg" alt="image">
+                        <span>User Name</span>
                         </a> 
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a href="/">Home</a>
-                            <a href="/profile">Profile</a>
-                            <div class="dropdown-divider"></div>
-                            <a href="/logout"></a>
-                        </div>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                            <div class="user-box">
+                                <div class="u-img"><img height="16" src="/img/default.jpg" alt="image"></div>
+                                <div class="u-text">
+                                    <h4>User Name</h4>
+                                    <div class="text-muted">info@email.com</div>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <a href="/">Home</a>
+                                <a href="/profile">Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="/logout"></a>
+                            </div>
+                            </li>
+                        </ul>
                 </li>
             </ul>
         </div>

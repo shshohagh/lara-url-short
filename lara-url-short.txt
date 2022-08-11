@@ -46,6 +46,7 @@ Validation For Login/Signup page
 ---------------------------------------------------------------------
 After Clone:
 cp .env.example .env
+composer update
 php artisan key:generate
 npm i
 Run 'npm install -g npm' to update

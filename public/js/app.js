@@ -23044,8 +23044,89 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "DashboardComponent"
+  name: "DashboardComponent",
+  data: function data() {
+    return {
+      funds: [{
+        title: 'Add Fund'
+      }, {
+        title: 'Received'
+      }, {
+        title: 'Transfer'
+      }, {
+        title: 'Withdraw'
+      }],
+      icons: ['angle-down', 'angles-down', 'angle-right', 'angle-up']
+    };
+  },
+  methods: {
+    randomNumber: function randomNumber() {
+      return Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+    }
+  }
 });
 
 /***/ }),
@@ -23061,6 +23142,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -47256,104 +47348,231 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container-fluid" }, [
+    _c("h4", { staticClass: "page-title" }, [_vm._v("Dashboard")]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "card card-stats card-primary" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("div", { staticClass: "row" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-7 d-flex align-items-center" }, [
+                _c("div", { staticClass: "number" }, [
+                  _c("p", [_vm._v("Short Links")]),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "card-title" }, [
+                    _vm._v(_vm._s(_vm.randomNumber())),
+                  ]),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "card card-stats card-info" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("div", { staticClass: "row" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-7 d-flex align-items-center" }, [
+                _c("div", { staticClass: "number" }, [
+                  _c("p", [_vm._v("Users")]),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "card-title" }, [
+                    _vm._v(_vm._s(_vm.randomNumber())),
+                  ]),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "card card-stats card-success" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("div", { staticClass: "row" }, [
+              _vm._m(2),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-7 d-flex align-items-center" }, [
+                _c("div", { staticClass: "number" }, [
+                  _c("p", [_vm._v("Link Views")]),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "card-title" }, [
+                    _vm._v(_vm._s(_vm.randomNumber())),
+                  ]),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "card card-stats card-warning" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("div", { staticClass: "row" }, [
+              _vm._m(3),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-7 d-flex align-items-center" }, [
+                _c("div", { staticClass: "number" }, [
+                  _c("p", [_vm._v("Guest Links")]),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "card-title" }, [
+                    _vm._v(_vm._s(_vm.randomNumber())),
+                  ]),
+                ]),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+    ]),
+    _vm._v(" "),
+    _vm._m(4),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "card card-stats card-default" }, [
+          _c(
+            "div",
+            { staticClass: "card-body" },
+            _vm._l(_vm.funds, function (fund) {
+              return _c("div", { staticClass: "row" }, [
+                _vm._m(5, true),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-7 d-flex align-items-center" }, [
+                  _c("div", { staticClass: "number" }, [
+                    _c("p", [_vm._v(_vm._s(fund.title))]),
+                    _vm._v(" "),
+                    _c("h4", { staticClass: "card-title" }, [
+                      _vm._v(_vm._s(_vm.randomNumber())),
+                    ]),
+                  ]),
+                ]),
+              ])
+            }),
+            0
+          ),
+        ]),
+      ]),
+    ]),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container-fluid" }, [
-      _c("h4", { staticClass: "page-title" }, [_vm._v("Dashboard")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "card card-starts card-wining" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-5" }, [
-                  _c("div", { staticClass: "icon-big text-center" }, [
-                    _c("div", { staticClass: "fa fa-users" }),
+    return _c("div", { staticClass: "col-5" }, [
+      _c("div", { staticClass: "icon-big text-center" }, [
+        _c("div", { staticClass: "fa fa-link" }),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-5" }, [
+      _c("div", { staticClass: "icon-big text-center" }, [
+        _c("div", { staticClass: "fa fa-users" }),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-5" }, [
+      _c("div", { staticClass: "icon-big text-center" }, [
+        _c("div", { staticClass: "fa fa-sack-dollar" }),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-5" }, [
+      _c("div", { staticClass: "icon-big text-center" }, [
+        _c("div", { staticClass: "fa fa-arrows-rotate" }),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("div", { staticClass: "card-sub" }, [
+              _c("h6", [_vm._v("My Links")]),
+              _vm._v(" "),
+              _c("table", { staticClass: "table mt-3" }, [
+                _c("thead", [
+                  _c("tr", [
+                    _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+                    _vm._v(" "),
+                    _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
+                    _vm._v(" "),
+                    _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
+                    _vm._v(" "),
+                    _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
                   ]),
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-7 d-flex align-items-center" }, [
-                  _c("div", { staticClass: "number" }, [
-                    _c("p", [_vm._v("Users")]),
+                _c("tbody", [
+                  _c("tr", [
+                    _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
                     _vm._v(" "),
-                    _c("h4", { staticClass: "card-title" }, [_vm._v("520")]),
+                    _c("td", [_vm._v("Mark")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Otto")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("@mdo")]),
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Jacob")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Thomton")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("@fat")]),
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Larry")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("the Bird")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("@twitter")]),
                   ]),
                 ]),
               ]),
             ]),
           ]),
         ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "card card-starts card-wining" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-5" }, [
-                  _c("div", { staticClass: "icon-big text-center" }, [
-                    _c("div", { staticClass: "fa fa-users" }),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-7 d-flex align-items-center" }, [
-                  _c("div", { staticClass: "number" }, [
-                    _c("p", [_vm._v("Users")]),
-                    _vm._v(" "),
-                    _c("h4", { staticClass: "card-title" }, [_vm._v("520")]),
-                  ]),
-                ]),
-              ]),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "card card-starts card-wining" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-5" }, [
-                  _c("div", { staticClass: "icon-big text-center" }, [
-                    _c("div", { staticClass: "fa fa-users" }),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-7 d-flex align-items-center" }, [
-                  _c("div", { staticClass: "number" }, [
-                    _c("p", [_vm._v("Users")]),
-                    _vm._v(" "),
-                    _c("h4", { staticClass: "card-title" }, [_vm._v("520")]),
-                  ]),
-                ]),
-              ]),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "card card-starts card-wining" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-5" }, [
-                  _c("div", { staticClass: "icon-big text-center" }, [
-                    _c("div", { staticClass: "fa fa-users" }),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-7 d-flex align-items-center" }, [
-                  _c("div", { staticClass: "number" }, [
-                    _c("p", [_vm._v("Users")]),
-                    _vm._v(" "),
-                    _c("h4", { staticClass: "card-title" }, [_vm._v("520")]),
-                  ]),
-                ]),
-              ]),
-            ]),
-          ]),
-        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-5" }, [
+      _c("div", { staticClass: "icon-big text-center" }, [
+        _c("div", { staticClass: "fa fa-angle-right" }),
       ]),
     ])
   },
@@ -47432,29 +47651,53 @@ var staticRenderFns = [
                     },
                   },
                   [
-                    _vm._v("\r\n                        User Name "),
-                    _c("span", { staticClass: "caret" }),
+                    _c("img", {
+                      attrs: {
+                        height: "16",
+                        src: "/img/default.jpg",
+                        alt: "image",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("span", [_vm._v("User Name")]),
                   ]
                 ),
                 _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu dropdown-menu-right",
-                    attrs: { "aria-labelledby": "navbarDropdown" },
-                  },
-                  [
-                    _c("a", { attrs: { href: "/" } }, [_vm._v("Home")]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "/profile" } }, [
-                      _vm._v("Profile"),
+                _c("ul", { staticClass: "dropdown-menu dropdown-user" }, [
+                  _c("li", [
+                    _c("div", { staticClass: "user-box" }, [
+                      _c("div", { staticClass: "u-img" }, [
+                        _c("img", {
+                          attrs: {
+                            height: "16",
+                            src: "/img/default.jpg",
+                            alt: "image",
+                          },
+                        }),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "u-text" }, [
+                        _c("h4", [_vm._v("User Name")]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "text-muted" }, [
+                          _vm._v("info@email.com"),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "dropdown-divider" }),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "/" } }, [_vm._v("Home")]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "/profile" } }, [
+                        _vm._v("Profile"),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "dropdown-divider" }),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "/logout" } }),
                     ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "dropdown-divider" }),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "/logout" } }),
-                  ]
-                ),
+                  ]),
+                ]),
               ]),
             ]
           ),
