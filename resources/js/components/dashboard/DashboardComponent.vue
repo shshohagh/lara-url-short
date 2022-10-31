@@ -169,5 +169,11 @@
 </script>
 
 <style scoped>
-
+.card{
+    border-radius: 10px;
+}
+.card .number{
+    font-weight: 600;
+    color: white;
+}
 </style>
