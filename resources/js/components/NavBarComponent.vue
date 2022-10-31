@@ -46,7 +46,7 @@
     export default {
         props:['user'],
         mounted() {
-           console.dir(this.user)
+           console.log(this.user) 
         },
         methods:{
             logout(){
