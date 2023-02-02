@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel') }} {{ Auth::user()->name }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -20,12 +20,19 @@
 </head>
 <body>
     <div id="app">
-        <navbar-component @guest user="null" @else :user="{{ Auth::user() }}" @endguest ></navbar-component>
-
+        <navbar-component :user="name"></navbar-component>
             @yield('content')
-    
     </div>   
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script>
+    export default {
+        data(){
+            return{
+                name:'rafi'
+            }
+        }
+    }
+</script>
 </body>
 </html>

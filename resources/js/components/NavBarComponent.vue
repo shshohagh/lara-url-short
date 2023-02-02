@@ -21,7 +21,7 @@
                             </li>
                             <li v-if="user !== 'null'" class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ user.name }}
+                                    {{user}}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -44,6 +44,11 @@
 
 <script>
     export default {
+        data(){
+            return{
+
+            }
+        },
         props:['user'],
         mounted() {
            console.log(this.user) 

@@ -22752,6 +22752,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {};
+  },
   props: ['user'],
   mounted: function mounted() {
     console.log(this.user);
@@ -47295,7 +47298,7 @@ var render = function () {
                       },
                       [
                         _vm._v(
-                          "\r\n                                    {{ user.name }}\r\n                                "
+                          "\r\n                                    {{user}}\r\n                                "
                         ),
                       ]
                     ),
